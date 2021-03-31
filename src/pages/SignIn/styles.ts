@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import { shade } from 'polished';
+import styled from "styled-components";
+import { shade } from "polished";
 
-import SignInBackgroundImg from '../../assets/image/sign-in-background.png';
+import SignInBackgroundImg from "../../assets/image/sign-in-background.png";
 
 export const Container = styled.div`
   height: 100vh;
@@ -31,23 +31,6 @@ export const Content = styled.div`
       color: #312e38;
     }
 
-    input {
-      background: #232129;
-      border-radius: 10px;
-      border: 2px solid #232129;
-      padding: 16px;
-      width: 100%;
-      color: #f4ede8;
-
-      &::placeholder {
-        color: #666360;
-      }
-
-      & + input {
-        margin-top: 8px;
-      }
-    }
-
     button {
       background: #ff5100;
       height: 56px;
@@ -61,7 +44,7 @@ export const Content = styled.div`
       transition: background-color 0.2s;
 
       &:hover {
-        background: ${shade(0.2, '#ff5100')};
+        background: ${shade(0.2, "#ff5100")};
         color: #f4ede8;
       }
     }
@@ -74,7 +57,7 @@ export const Content = styled.div`
       transition: color 0.2s;
 
       &:hover {
-        color: ${shade(0.2, '#312e38')};
+        color: ${shade(0.2, "#312e38")};
       }
     }
   }
@@ -93,7 +76,7 @@ export const Content = styled.div`
     }
 
     &:hover {
-      color: ${shade(0.2, '#ff5100')};
+      color: ${shade(0.2, "#ff5100")};
     }
   }
 `;
