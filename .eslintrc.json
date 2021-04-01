@@ -31,6 +31,7 @@
     "react/jsx-one-expression-per-line": "off",
     "@typescript-eslint/ban-types": "off",
     "react/jsx-props-no-spreading": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
     "react/prop-types": "off",
     "no-console": "off",
     "react-hooks/rules-of-hooks": "error",
@@ -39,6 +40,8 @@
     "import/prefer-default-export": "off",
     "react/react-in-jsx-scope": "off",
     "no-unused-expressions": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+
     // "quotes": ["error","Single"],
     "@typescript-eslint/explicit-function-return-type": [
       "error",
