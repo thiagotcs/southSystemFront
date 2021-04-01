@@ -77,7 +77,7 @@ const SignIn: React.FC = () => {
               placeholder="Senha"
             />
             <Button type="submit">Entrar</Button>
-            <a href="forgot">Esqueci minha senha</a>
+            {/* <a href="forgot">Esqueci minha senha</a> */}
           </Form>
           <Link to="/signup">
             <FiLogIn />
