@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useEffect, useRef, useState } from 'react';
 import { Form } from '@unform/web';
 import { useHistory, useParams } from 'react-router-dom';
@@ -27,13 +26,11 @@ const EditDragon: React.FC = () => {
 
       history.push('/');
     } catch (error) {
-      // eslint-disable-next-line no-alert
       alert(error);
     }
   };
 
   useEffect(() => {
-    // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
     const loadDragonDetail = async () => {
       const response = await GetDragonDetail(id);
 

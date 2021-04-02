@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/explicit-function-return-type */
 import { format } from 'date-fns';
 import { orderBy } from 'lodash';
 import IDragonData from '../interfaces/IDragonData';

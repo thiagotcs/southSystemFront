@@ -1,5 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import { Form } from '@unform/web';
 import { FormHandles, SubmitHandler } from '@unform/core';
 import { useHistory } from 'react-router-dom';
@@ -17,14 +16,12 @@ const AddDragon: React.FC = () => {
 
   const HandleSubmit: SubmitHandler = async ({ ...data }, { reset }) => {
     try {
-      // eslint-disable-next-line no-param-reassign
       data.histories = data.histories.split(' ');
       await AddDragonData(data);
 
       history.push('/');
       reset();
     } catch (error) {
-      // eslint-disable-next-line no-alert
       alert(error);
     }
   };

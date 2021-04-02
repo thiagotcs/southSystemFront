@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/explicit-function-return-type */
 import React, { useState, useEffect } from 'react';
 import { FiEdit, FiPlusCircle, FiPower, FiTrash } from 'react-icons/fi';
 import { FaDragon } from 'react-icons/fa';
@@ -74,7 +73,6 @@ const Dashboard: React.FC = () => {
           </h1>
           {orderByArray(listDragon).map(({ id, name, createdAt, type }) => (
             <Card key={id}>
-              {/* <strong>Novo Dragon</strong> */}
               <div>
                 <CardInfo>
                   <img

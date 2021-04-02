@@ -18,7 +18,6 @@ const DragonDetail: React.FC = () => {
   const { id } = useParams<Iparams>();
 
   useEffect(() => {
-    // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
     const loadDragonDetail = async () => {
       const response = await GetDragonDetail(id);
       setDetail(response);
